@@ -8,6 +8,7 @@ public class ZkConstants {
     public static final String SLASH = "/";
     public static final String SPACE = " ";
     public static final String POINT = ".";
+    public static final String COLON = ":";
     public static final String EMPTY_STRING = "";
     public static final String UNDERSCORE = "_";
     public static final String LEFT_PAREN = "(";
@@ -22,6 +23,8 @@ public class ZkConstants {
     /*------------- Zookeeper command -------------*/
     public static final String COMMAND_CONF = "conf";
     public static final String COMMAND_ENVI = "envi";
+    public static final String COMMAND_SRVR = "srvr";
+    public static final String COMMAND_CONS = "cons";
     public static final String COMMAND_RUOK = "ruok";
     public static final String COMMAND_STAT = "stat";
     public static final String COMMAND_MNTR = "mntr";
