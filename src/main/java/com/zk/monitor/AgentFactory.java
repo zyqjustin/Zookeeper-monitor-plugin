@@ -13,5 +13,6 @@ public abstract class AgentFactory {
 	
 	void createConfiguredAgents(Runner runner) throws ConfigurationException {
 		// TODO create agent and register in runner
+		
 	}
 }

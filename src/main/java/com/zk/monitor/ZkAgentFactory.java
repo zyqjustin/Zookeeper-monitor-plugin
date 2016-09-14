@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.zk.monitor.exception.ConfigurationException;
+import com.zk.monitor.report.ConsoleReporter;
 
 import static com.zk.monitor.utils.ZkConstants.*;
 
@@ -19,7 +20,8 @@ public class ZkAgentFactory extends AgentFactory {
 		
 		// TODO deal with absent value.
 		
-		return new ZkAgent(name, host, Integer.parseInt(port), readConfiguration());
+		// TODO reporter
+		return new ZkAgent(name, host, Integer.parseInt(port), readConfiguration(), new ConsoleReporter());
 	}
 
 	public Map<String, Object> readConfiguration() {
